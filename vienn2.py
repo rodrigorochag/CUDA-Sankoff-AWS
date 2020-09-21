@@ -10,7 +10,7 @@ def abre_arquivo():
     seq_mid = []
     hamb = []
     lista = []
-    with open('/home/ubuntu/cudasankoff_ec2/cudasankoff') as file:
+    with open('/home/ubuntu/cudasankoff_ec2/cudasankoff/teste.txt') as file:
         for line in file:
             hamb.append(line)
     lista.append(hamb[4])
@@ -32,7 +32,7 @@ def limpar(lista):
     return lista_limpa
 
 # executa a função limpar, realizando a limpeza na lista proveniente da função abre_arquivo
-print(limpar(abre_arquivo()))
+#print(limpar(abre_arquivo()))
 
 def converte_to_string(lista_limpa):
     lista_string = []
@@ -50,7 +50,7 @@ def converte_to_string(lista_limpa):
     #print('aqui',final1)
 
     return lista_final
-print(converte_to_string(limpar(abre_arquivo())))
+#print(converte_to_string(limpar(abre_arquivo())))
 
 
 #b = str(novo) #precisa chegar aqui como string
