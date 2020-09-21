@@ -51,17 +51,15 @@
 
 </br>
 
-	<center>
 
 
 
 
-	<form method="post"/>
-
-
-{% csrf_token %}
-{{ form }}
-<table>
+<center>
+<br>
+    <a> Tamanho da Primeira Sequência: {{seq1_len}}</a>
+    </br>
+    <a> Tamanho da Segunda Sequência: {{seq2_len}}</a>
 
 {% for a in read %}
 
@@ -87,11 +85,13 @@
 
 
     {% endfor %}
-<tr><td>
-    <!--{{ a }}-->
-</td></tr>
+    <tr><td>
+    </td></tr>
 
-{% endfor %}
+
+    {% endfor %}
+</br>
+    {{exec}}
 </br>
 <input type='button' value='Voltar' onclick='history.go(-1)' />
 </table>
@@ -108,7 +108,7 @@
 
 <img src="{% static "static/graph.png" %}" alt="GC Content">
 <img src="{% static "static/rna.png" %}" alt="RNA" width="20%">
-
+</center>
 <!--	<form method="post"/>-->
 <!--        {% csrf_token  %}-->
 <!--        {{ form }}-->
