@@ -1,7 +1,7 @@
 from .forms import Leitor
 from django.shortcuts import render
 from .funcoes import linux, manipulate_txt,write_sequence, data_visualization,remove_barra
-from vienn2 import converte_to_string,abre_arquivo,limpar
+from vienn2 import converte_to_string,abre_arquivo,limpar,get_exec_time
 from seq_length import seq_len
 # Create your views here.
 
