@@ -1,0 +1,9 @@
+Sankoff:
+seq1: (8)	AGATAGAT
+seq2: (8)	AGATAGAT
+Score: -15.06
+AGATAGA-T
+.........
+AGATAGAT-
+Backtrace total time: 0:00.000018
+Total execution time: 0:00.010690
